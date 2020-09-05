@@ -9,8 +9,8 @@ api = tweepy.API(auth, wait_on_rate_limit=True,
                  wait_on_rate_limit_notify=True)
 user = api.me()
 
-search = '#afrodevs OR #blacktechtwitter OR #Python OR #naijadev OR #naijatech'
-nrTweets = 10
+search = '#afrodevs OR #blacktechtwitter OR #Python OR #naijadev OR #naijatech OR #amplifyblackvoices'
+nrTweets = 30
 
 for tweet in tweepy.Cursor(api.search, q=(search), lang='en').items(nrTweets):
     try:
